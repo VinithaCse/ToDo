@@ -49,13 +49,13 @@ class ToDoModel: NSObject {
     
     var json: Dictionary<String,Any> {
         
-        var tripDict = Dictionary<String,Any>()
-        tripDict["title"] = self.title
-        tripDict["author"] = self.author
-        tripDict["tag"] = self.tag
-        tripDict["is_completed"] = self.isCompleted
-        tripDict["priority"] = self.priority
-        tripDict["id"] = self.id
-        return tripDict
+        var dict = Dictionary<String,Any>()
+        dict["title"] = self.title
+        dict["author"] = self.author
+        dict["tag"] = self.tag
+        dict["is_completed"] = self.isCompleted
+        dict["priority"] = self.priority
+        dict["id"] = self.id
+        return dict
     }
 }
